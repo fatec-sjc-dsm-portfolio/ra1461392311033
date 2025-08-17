@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Projetos</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre mim</a></li>
+                <li><a href="projects.html">Projetos</a></li>
+                <li><a href="skills.html">Formação e Habilidades</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projetos">
+            <article class="project-card project">
+                <h3>Dados da Covid – API 1º Semestre</h3>
+                <p>Sistema para pesquisa de dados sobre a Covid longa – API 1º semestre de 2023.</p>
+                <button class="project-button" data-project="api-covid">Ver detalhes</button>
+            </article>
+
+            <!-- Exemplo: outro projeto -->
+            <!--
+            <article class="project-card project">
+                <h3>Outro Projeto</h3>
+                <p>Breve descrição do outro projeto.</p>
+                <button class="project-button" data-project="outro">Ver detalhes</button>
+            </article>
+            -->
+        </section>
+    </main>
+
+    <!-- Modal (apenas nesta página) -->
+    <div id="project-modal" class="modal" aria-hidden="true" role="dialog">
+        <div class="modal-content" role="document">
+            <button class="close-button" aria-label="Fechar">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Marcus Vinicius</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
