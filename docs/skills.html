@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formação e Habilidades</title>
+    <title>Portfólio de Marcus Betti</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Formação e Habilidades</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="skills.html">Formação e Habilidades</a></li>
-            </ul>
-        </nav>
+    <header class="custom-navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <img src="assets/android-chrome-512x512.png" alt="Logo" class="navbar-logo">
+                <span>Portfólio</span>
+            </div>
+            <nav class="navbar-right">
+                <a href="index.html" class="nav-link">sobre mim</a>
+                <a href="projects.html" class="nav-link">projetos</a>
+                <a href="skills.html" class="nav-link">formação e habilidades</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <main class="page-container">
         <section id="formacao">
             <h2>Formação</h2>
             <p>Descreva aqui sua formação acadêmica (curso, instituição, períodos relevantes).</p>
@@ -37,8 +40,21 @@
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Marcus Vinicius</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="mailto:marcusbetti@gmail.com" aria-label="Email" title="Email" class="social-link">
+            <span class="footer-icon icon-envelope" aria-hidden="true"></span>
+          </a>
+          <a href="https://github.com/marcusvbe" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" class="social-link">
+            <span class="footer-icon icon-github" aria-hidden="true"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/marcus-betti-715b6614a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="social-link">
+            <span class="footer-icon icon-linkedin" aria-hidden="true"></span>
+          </a>
+        </div>
+        <p>&copy; 2025 Marcus Betti. Todos os direitos reservados.</p>
+      </div>
     </footer>
 </body>
 </html>

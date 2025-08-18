@@ -3,38 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projetos</title>
+    <title>Portfólio de Marcus Betti</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Projetos</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Sobre mim</a></li>
-                <li><a href="projects.html">Projetos</a></li>
-                <li><a href="skills.html">Formação e Habilidades</a></li>
-            </ul>
-        </nav>
+    <body>
+    <header class="custom-navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <img src="assets/android-chrome-512x512.png" alt="Logo" class="navbar-logo">
+                <span>Portfólio</span>
+            </div>
+            <nav class="navbar-right">
+                <a href="index.html" class="nav-link">sobre mim</a>
+                <a href="projects.html" class="nav-link">projetos</a>
+                <a href="skills.html" class="nav-link">formação e habilidades</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="projetos">
-            <article class="project-card project">
-                <h3>Dados da Covid – API 1º Semestre</h3>
-                <p>Sistema para pesquisa de dados sobre a Covid longa – API 1º semestre de 2023.</p>
-                <button class="project-button" data-project="api-covid">Ver detalhes</button>
-            </article>
-
-            <!-- Exemplo: outro projeto -->
-            <!--
-            <article class="project-card project">
-                <h3>Outro Projeto</h3>
-                <p>Breve descrição do outro projeto.</p>
-                <button class="project-button" data-project="outro">Ver detalhes</button>
-            </article>
-            -->
-        </section>
+        <div id="top" class="projects-container">
+            <h2 class="projects-title">Projetos</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/API1_covid.png" alt="Projeto API Covid" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Dados da Covid – API 1º Semestre</h3>
+                        <p>Sistema para pesquisa de dados sobre a Covid longa – API 1º semestre de 2023.</p>
+                    </div>
+                    <button class="project-button" data-project="api-covid">Ver detalhes</button>
+                </article>
+                
+                <!-- Outros projetos podem ser adicionados aqui -->
+            </div>
+        </div>
     </main>
 
     <!-- Modal (apenas nesta página) -->
@@ -45,10 +50,22 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Marcus Vinicius</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="mailto:marcusbetti@gmail.com" aria-label="Email" title="Email" class="social-link">
+            <span class="footer-icon icon-envelope" aria-hidden="true"></span>
+          </a>
+          <a href="https://github.com/marcusvbe" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub" class="social-link">
+            <span class="footer-icon icon-github" aria-hidden="true"></span>
+          </a>
+          <a href="https://www.linkedin.com/in/marcus-betti-715b6614a/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn" class="social-link">
+            <span class="footer-icon icon-linkedin" aria-hidden="true"></span>
+          </a>
+        </div>
+        <p>&copy; 2025 Marcus Betti. Todos os direitos reservados.</p>
+      </div>
     </footer>
-
     <script src="js/script.js"></script>
 </body>
 </html>
