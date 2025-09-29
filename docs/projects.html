@@ -10,12 +10,12 @@
     <body>
     <header class="custom-navbar">
         <div class="navbar-container">
-            <div class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <img src="assets/android-chrome-512x512.png" alt="Logo" class="navbar-logo">
                 <span>Portfólio</span>
-            </div>
+            </a>
             <nav class="navbar-right">
-                <a href="index.html" class="nav-link">sobre mim</a>
+                <a href="about.html" class="nav-link">sobre mim</a>
                 <a href="projects.html" class="nav-link">projetos</a>
                 <a href="skills.html" class="nav-link">formação e habilidades</a>
             </nav>
@@ -26,6 +26,31 @@
         <div id="top" class="projects-container">
             <h2 class="projects-title">Projetos</h2>
             <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/ctrl-A.png" alt="Projeto API 3" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestão de Ativos – API 3º Semestre</h3>
+                        <p>Sistema para gestão eficiente de ativos empresariais – API 3º semestre de 2024.</p>
+                    </div>
+                    <button class="project-button" data-project="api3">Ver detalhes</button>
+                </article>
+
+                                
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/api_Chamados.png" alt="Projeto API 2" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema de Gestão de Chamados – API 2º Semestre</h3>
+                        <p>Sistema de gestão de chamados de TI para instituições de ensino – API 2º semestre de 2023.</p>
+                    </div>
+                    <button class="project-button" data-project="api2">Ver detalhes</button>
+                </article>
+
+
                 <article class="project-card">
                     <div class="project-image-container">
                         <img src="assets/API1_covid.png" alt="Projeto API Covid" class="project-image">
@@ -34,10 +59,21 @@
                         <h3>Dados da Covid – API 1º Semestre</h3>
                         <p>Sistema para pesquisa de dados sobre a Covid longa – API 1º semestre de 2023.</p>
                     </div>
-                    <button class="project-button" data-project="api-covid">Ver detalhes</button>
+                    <button class="project-button" data-project="api1">Ver detalhes</button>
                 </article>
-                
-                <!-- Outros projetos podem ser adicionados aqui -->
+
+                <article class="project-card">
+                    <div class="project-image-container">
+                        <img src="assets/desafio_proj2.png" alt="Site UNES" class="project-image">
+                    </div>
+                    <div class="project-content">
+                        <h3>Site UNES</h3>
+                        <p>Site criado para pôr em prática estudos de desenvolvimento web frontend e backend – 1º semestre de 2023</p>
+                    </div>
+                    <button class="project-button" data-project="unes">Ver detalhes</button>
+                </article>
+
+
             </div>
         </div>
     </main>
