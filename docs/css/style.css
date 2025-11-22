@@ -873,10 +873,10 @@ section{
 /* ====== About section adjustments (ensure matches portfolio_2024 About.css) ====== */
 .about-section {
   position: relative;
-  flex: 1; /* Make section fill available space */
+  flex: 1;
   padding: 4rem 0;
-  background: linear-gradient(135deg, var(--primary-dark-green) 0%, var(--primary-green) 100%);
-  color: #ffffff;
+  background: linear-gradient(135deg, rgba(12, 92, 66, 0.1) 0%, rgba(9, 52, 38, 0.08) 100%); /* ✅ Muito mais suave */
+  color: var(--text-color); /* ✅ Texto escuro legível */
   margin: 0;
 }
 
@@ -887,11 +887,24 @@ section{
 }
 
 .about-title {
-  color: var(--accent-gold);
-  font-size: 2.6rem;
+  font-size: 2.5rem;
   font-family: var(--font-heading);
-  margin-bottom: 1.25rem;
+  color: var(--accent-gold);
   text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.about-title + hr {
+  border: none;
+  height: 4px;
+  width: 60px;
+  margin: 0 auto 2rem auto;
+  background: linear-gradient(90deg, var(--accent-gold) 0%, var(--accent-yellow) 100%);
+  border-radius: 2px;
+  opacity: 0.85;
 }
 
 .about-content {
@@ -913,6 +926,7 @@ section{
   line-height: 1.6;
   white-space: pre-line;
   text-align: justify;
+  color: var(--text-color); /* ✅ Garante legibilidade */
 }
 
 .about-image-container {
