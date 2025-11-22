@@ -26,8 +26,9 @@
 
 html,body{
   height:100%;
-  min-width: 100vw;
+  min-width: 100%;  /* ✅ MUDE PARA 100% */
   min-height: 100vh;
+  overflow-x: hidden;  /* ✅ ADICIONE ISTO */
 }
 
 body{
@@ -83,7 +84,7 @@ body{
   transition: color 0.3s ease, transform 0.2s ease;
   display: flex;
   align-items: center;
-  gap: 0.8rem; /* Espaço entre o ícone e o texto */
+  gap: 0.6rem; /* Espaço entre o ícone e o texto */
   margin-right: auto;
   text-decoration: none;
   overflow: visible; /* garante que a logo não seja cortada */
@@ -95,19 +96,18 @@ body{
 }
 
 /* Estilização do logo/ícone */
-.navbar-logo {
-  width: 2.8rem;               /* ajuste de tamanho */
-  height: 2.8rem;
-  border-radius: 6px;          /* use 0px para sem arredondamento */
-  object-fit: contain;         /* mostra a imagem inteira dentro do box */
-  background: transparent;
+.navbar-brand [data-lucide] {
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--accent-gold);
+  stroke-width: 1.5;
+  transition: color 0.3s ease, transform 0.18s ease;
   display: inline-block;
-  padding: 2px;                /* pequeno espaçamento interno */
-  box-shadow: none;
-  transition: transform 0.18s ease;
+  margin-right: 0.2rem;
 }
 
-.navbar-brand:hover .navbar-logo {
+.navbar-brand:hover [data-lucide] {
+  color: var(--accent-yellow);
   transform: scale(1.06);
 }
 
@@ -930,16 +930,14 @@ section{
 
 /* Full-bleed helper: faz a seção ocupar toda a largura do viewport */
 .full-bleed {
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
-  /* mantém o padding interno consistente com o layout */
+  width: 100%;  /* ✅ MUDE PARA 100% */
+  margin-left: auto;  /* ✅ MUDE */
+  margin-right: auto;  /* ✅ MUDE */
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  /* remover cantos arredondados quando preencher a largura inteira */
   border-radius: 0;
-  margin-top: 0; /* Add this */
-  margin-bottom: 0; /* Add this */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .projects-link {
     display: flex;
