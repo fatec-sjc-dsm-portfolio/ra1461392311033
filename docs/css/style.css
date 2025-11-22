@@ -68,12 +68,11 @@ body{
 
 .navbar-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
+  justify-content: space-between; /* Portfólio à esquerda, menu à direita */
   width: 100%;
-  padding: 0 2rem;
+  padding: 0 6.5rem; /* Espaço nas laterais */
+  box-sizing: border-box;
 }
 
 .navbar-brand {
@@ -118,7 +117,8 @@ body{
 
 .navbar-right {
   display: flex;
-  gap: 2rem;
+  gap: 2rem; /* Espaçamento entre os itens do menu */
+  align-items: center;
   margin-left: auto;
 }
 
