@@ -1,5 +1,33 @@
 // Dados dos projetos (escopo global)
 const projectsData = {
+        'api6': {
+        title: 'Sistema de Busca Semântica – API 6º Semestre',
+        image: 'assets/print_api_grande.png',
+        description: 'Sistema de busca semântica capaz de interpretar perguntas dos usuários, responder via agente de IA integrado ao chat interativo e enviar boletins automáticos por e-mail, gerados pela IA a partir dos dados do cliente Dom Rock – 1º semestre de 2025.',
+        detalhes: `No projeto integrador (API) do 6º semestre, desenvolvemos um sistema de busca semântica sobre o dataset fornecido pelo cliente Dom Rock. O sistema interpreta perguntas dos usuários e responde por meio de um agente de inteligência artificial integrado ao chat interativo. Também implementamos a funcionalidade de envio automático de boletins, gerados pela IA com base nos dados do período selecionado, diretamente para o e-mail do usuário, conforme modelo fornecido pelo cliente.`,
+        repoLink: 'https://github.com/equipe-javali/API_6', // *** FAZER FORK E SUBSTITUIR AQUI ***
+        hardSkills: [
+            'AWS: plataforma de hospedagem',
+            'Figma: prototipagem',
+            'Flutter: framework do front-end',
+            'Git e GitHub: versionamento e documentação',
+            'Python: back-end',
+            'Shortcut: organização de tarefas',
+            'Swagger: documentação das rotas do back-end'
+        ],
+        softSkills: [
+            'Organização de tarefas',
+            'Gestão de projeto',
+            'Resolução de problemas',
+            'Trabalho em equipe'
+        ],
+        contributions: [
+            'Implementação da contextualização do agente de IA, incluindo análise de perguntas e geração de contexto a partir dos dados de estoque e faturamento.',
+            'Desenvolvimento da funcionalidade completa de recuperação de senha por e-mail, com integração entre backend (rota, geração de senha, envio por e-mail) e frontend (formulário, feedback visual, navegação).',
+            'Implementação do sistema de importação e processamento de arquivos CSV para faturamento e estoque, incluindo rotas, validação e persistência no banco de dados.',
+            'Criação da rota para alteração do status de recebimento de boletim do usuário, com CRUD básico de usuários e documentação das rotas.'
+        ]
+    },
     'minhasSenhas': {
         title: 'Aplicativo Minhas Senhas',
         image: 'assets/screenshotMinhasSenhas3.png',
